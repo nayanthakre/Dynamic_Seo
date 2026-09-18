@@ -1,0 +1,46 @@
+ .site-header {
+	 align-items: center;
+	 background: #1d2925;
+	 color: #f4f1ea;
+	 display: flex;
+	 gap: 32px;
+	 justify-content: space-between;
+	 padding: 18px max(20px, calc((100% - 760px) / 2));
+ }
+
+ .brand,
+ .site-header a {
+	 color: inherit;
+	 text-decoration: none;
+ }
+
+ .brand {
+	 font: 700 1.05rem/1 Georgia, 'Times New Roman', serif;
+ }
+
+ nav {
+	 align-items: center;
+	 display: flex;
+	 flex-wrap: wrap;
+	 font: 0.85rem/1.4 Arial, sans-serif;
+	 gap: 14px;
+ }
+
+ nav a {
+	 border-bottom: 1px solid transparent;
+	 padding-bottom: 3px;
+ }
+
+ nav a:hover,
+ nav a.active {
+	 border-bottom-color: #d7b56d;
+	 color: #d7b56d;
+ }
+
+ @media (max-width: 600px) {
+	 .site-header {
+		 align-items: flex-start;
+		 flex-direction: column;
+		 gap: 14px;
+	 }
+ }

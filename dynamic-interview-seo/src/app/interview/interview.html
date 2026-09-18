@@ -1,0 +1,25 @@
+<main class="interview-page">
+  @if (loading) {
+    <p class="status">Loading interview...</p>
+  } @else if (notFound) {
+    <p class="status">Interview not found.</p>
+  } @else if (interview) {
+    <section class="hero">
+      <p class="eyebrow">Interview opportunity</p>
+      <h1>{{ interview.jobTitle }} Interview</h1>
+      <p class="company">{{ interview.companyName }} · {{ interview.experience }}</p>
+    </section>
+
+    <section class="content">
+      <h2>Job Description</h2>
+      <p>{{ interview.jobDescription }}</p>
+
+      <h2>Required Skills</h2>
+      <ul>
+        @for (skill of interview.skills; track skill) {
+          <li>{{ skill }}</li>
+        }
+      </ul>
+    </section>
+  }
+</main>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "jobTitle": "React Developer",
+    "companyName": "ABC Technologies",
+    "experience": "2 Years",
+    "jobDescription": "We are looking for a React Developer with strong JavaScript and React skills.",
+    "skills": ["React", "JavaScript", "HTML", "CSS", "Redux"]
+  },
+  {
+    "id": "2",
+    "jobTitle": "Angular Developer",
+    "companyName": "Northstar Labs",
+    "experience": "3 Years",
+    "jobDescription": "Join our frontend team to build fast, accessible Angular applications.",
+    "skills": ["Angular", "TypeScript", "RxJS", "HTML", "CSS"]
+  },
+  {
+    "id": "3",
+    "jobTitle": "Frontend Developer",
+    "companyName": "Pixel Foundry",
+    "experience": "1 Year",
+    "jobDescription": "Help us create polished customer experiences across web and mobile products.",
+    "skills": ["JavaScript", "TypeScript", "CSS", "Accessibility", "Testing"]
+  }
+]

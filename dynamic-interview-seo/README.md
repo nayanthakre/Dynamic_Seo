@@ -1,16 +1,30 @@
-# DynamicInterviewSeo
+# Dynamic Interview SEO
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+This demo renders interview data from a URL ID and updates the page SEO metadata during SSR.
 
 ## Development server
 
 To start a local development server, run:
 
 ```bash
-ng serve
+cd dynamic-interview-seo
+npm start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open `http://localhost:4200/interview/1`, then use the React, Angular, and Frontend links in the header. Each URL loads a different record from `public/assets/interviews.json` and changes the content, title, description, Open Graph tags, and canonical URL.
+
+## SSR and SEO verification
+
+Build and start the SSR server from the project directory:
+
+```bash
+npm run build
+PORT=4000 npm run serve:ssr:dynamic-interview-seo
+```
+
+Check `/interview/1` and `/interview/2`. Use **View Page Source** and search for the interview title and description; they should be present in the initial HTML. In Chrome DevTools, run Lighthouse in Navigation mode with Performance, Accessibility, Best Practices, and SEO enabled.
+
+Lighthouse is a technical audit; its score is not proof that Google indexed the page.
 
 ## Code scaffolding
 
